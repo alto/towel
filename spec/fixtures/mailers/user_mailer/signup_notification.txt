@@ -1,0 +1,12 @@
+Hallo dude!
+
+Dein Account wurde angelegt.
+
+  Login: dude
+
+Benutze bitte diesen Link, um deinen Account zu aktivieren:
+
+  http://test.com/activate/abc
+
+
+Das Inlight-Team

@@ -1,0 +1,15 @@
+development:
+  adapter: mysql
+  encoding: utf8
+  database: towel_development
+  username: root
+  password:
+  host: localhost
+
+test:
+  adapter: mysql
+  encoding: utf8
+  database: towel_test
+  username: root
+  password:
+  host: localhost

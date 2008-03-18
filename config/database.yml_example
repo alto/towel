@@ -1,0 +1,15 @@
+development:
+  adapter: mysql
+  encoding: utf8
+  database: inlight_development
+  username: root
+  password:
+  host: localhost
+
+test:
+  adapter: mysql
+  encoding: utf8
+  database: inlight_test
+  username: root
+  password:
+  host: localhost

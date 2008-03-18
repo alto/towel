@@ -1,0 +1,7 @@
+<h1>Card: <%=h @card.title %></h1>
+<h2>Project: <%= link_to(@project.name, project_path(@project)) %></h2>
+<%= display_description(@card.description) %>
+<h2>Effort estimate</h2>
+<p><%=h @card.effort %></p>
+
+<%= link_to('Edit this card', edit_project_card_path(@project, @card)) %>

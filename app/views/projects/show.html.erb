@@ -1,0 +1,78 @@
+<%- content_for(:head) do -%>
+  <%= stylesheet_link_tag 'calendariffic/calendar-system.css' %>    
+  <%= javascript_include_tag 'calendariffic/calendar.js', 'calendariffic/calendar-setup.js' %>
+  <%= javascript_include_tag "calendariffic/lang/calendar-de.js" %>
+<%- end -%>
+
+<h1>Project <%=h @project.name %></h1>
+
+<h2>Cards</h2>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Effort</th>
+    <th>Started</th>
+    <th>Finished</th>
+    <th>State</th>
+    <th>Action</th>
+  </tr>
+  <%- @cards.each do |card| -%>
+    <tr>
+      <td><%= link_to(card.title, project_card_path(@project, card)) %></td>
+      <td><%= h(card.effort) %></td>
+      <td><%= display_date(card.started_at) %></td>
+      <td><%= display_date(card.finished_at) %></td>
+      <td><%= h(card.display_state) %></td>
+      <td>
+        <%- @card = card -%>
+        <%- form_for :card, :url => project_card_path(@project,@card), :html => {:method => :put} do -%>
+          <label for="timestamp">Timestamp</label>
+        	<%= calendar_tag(@card, :timestamp) %>
+          <%= submit_tag('start') %>
+          <%= submit_tag('finish') %>
+        <%- end -%>
+        <!-- <%- if !@card.finished? && !@card.started? -%>
+          <%= link_to('Start', project_card_path(@project,@card, :commit => 'start'), :method => :put) %>
+        <%- end -%>
+        <%- if !@card.finished? -%>
+          <%= link_to('Finish', project_card_path(@project,@card, :commit => 'finish'), :method => :put) %>
+        <%- end -%> -->
+        <%= link_to('Delete', project_card_path(@project,@card), :method => :delete, :confirm => 'Wanna delete this card?') %>
+      </td>
+    </tr>
+  <%- end -%>
+</table>
+
+<table>
+  <tr>
+    <th>day</th>
+    <th>Date</th>
+    <th>Points to do</th>
+    <th>Points done today</th>
+    <th>Points done overall</th>
+    <th>Speed overall</th>
+    <th>Speed last days</th>
+    <th>Speed in this iteration</th>
+    <th>Speed in this iteration cumulated</th>
+  </tr>
+  <%- @days.each_with_index do |day,i| -%>
+    <tr>
+      <td><%= i+1 %></td>
+      <td><%= display_date(day.timestamp) %></td>
+      <td><%= day.points_to_do %></td>
+      <td><%= day.points_done_today %></td>
+      <td><%= day.points_done_all %></td>
+      <td><%= day.speed_overall %></td>
+      <td><%= day.speed_last_days %></td>
+      <td><%= day.speed_iteration %></td>
+      <td><%= day.speed_iteration_cumulated %></td>
+    </tr>
+  <%- end -%>
+</table>
+
+<%#= link_to('data', formatted_project_path(@project, 'text')) %>
+<%= ziya_chart(formatted_project_path(@project, 'up_chart'), {:bgcolor => '#4c5e6f', :width => 500, :height => 400}) %>  
+<%= ziya_chart(formatted_project_path(@project, 'down_chart'), {:bgcolor => '#4c5e6f', :width => 500, :height => 400}) %>  
+
+<%= link_to('To my projects', user_path(current_user)) %> |
+<%= link_to('Create new card', new_project_card_path(@project)) %>

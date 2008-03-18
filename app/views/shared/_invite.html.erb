@@ -1,0 +1,14 @@
+<%= link_to_function('Freunde einladen', 
+    visual_effect(:toggle_appear, 'invite_form', :duration => 0.3), 
+    :class => 'com') %>
+<%- form_remote_tag :url => invitation_path, 
+    :html => {:id => 'invite_form', :style => 'display:none;'} do -%>
+  <label for="recipients">Empfänger-Emailadressen* (mit Komma getrennt)</label>
+  <%= text_field_tag(:recipients) %>
+  <label for="message">Nachricht</label>
+  <%= text_field_tag(:message) %>
+  <%= submit_tag('Senden') %>
+  oder <%= link_to_function('abbrechen', 
+    visual_effect(:toggle_appear, 'invite_form', :duration => 0.3), :class => 'com') %>
+  mit * markierte Felder sind Pflichtfelder
+<%- end -%>

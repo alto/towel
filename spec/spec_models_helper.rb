@@ -1,0 +1,2 @@
+module SpecModelsHelper
+end

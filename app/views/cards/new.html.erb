@@ -1,0 +1,8 @@
+<h1>Create new card</h1>
+
+<%- form_for :card, :url => project_cards_path, :html => {:multipart => true} do |form| -%>
+  <%= error_messages_for :card %>
+  <%= render :partial => 'form', :object => form %>
+  <%= submit_tag('Create card') %>
+  * fields are mandatory
+<%- end -%>

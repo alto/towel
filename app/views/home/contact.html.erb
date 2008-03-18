@@ -1,0 +1,48 @@
+<div class="box">
+	<div class="fullBox">
+		<h1>Kontakt</h1>
+	</div>
+</div>		
+<div class="box normal">
+	<div class="wideBoxLeft">
+		<div class="formRow">
+			<p>mit * markierte Felder sind Pflichtfelder</p>
+		</div>
+		<%- form_tag do -%>
+		
+			<%= flash_error %>
+			
+			<%- unless logged_in? -%>
+				<fieldset>
+					<div class="formRow">
+						<label for="name">Name*</label>
+						<%= text_field_tag(:name, @name, :class => 'input') %>
+					</div>
+					<div class="formRow">
+						<label for="email">Emailadresse*</label>
+						<%= text_field_tag(:email, @email, :class => 'input') %>
+					</div>
+				</fieldset>
+			<%- end -%>
+			
+			<fieldset>
+				<div class="formRow">
+					<label for="subject">Betreff*</label>
+					<%= text_field_tag(:subject, @subject, :class => 'input') %>
+				</div>
+				<div class="formRow">
+					<label for="body">Nachricht*</label>
+					<%= text_area_tag(:body, @body, :class => 'input') %>
+				</div>				
+			</fieldset>
+			<div class="formRow">
+				<div class="buttons">
+      		<%= link_to(image_tag('buttons/bt_abbrechen.gif', :alt => 'Abbrechen'), root_path) %>
+  				<%= image_submit_tag('buttons/bt_speichern.gif', :alt => 'Speichern') %>
+				</div>
+			</div>
+		<%- end -%>
+	</div>
+	<div class="sideShow">	
+	</div>
+</div>

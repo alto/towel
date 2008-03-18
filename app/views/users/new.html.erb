@@ -1,0 +1,57 @@
+<div class="box">
+	<div class="fullBox">
+		<h1>Neues Mitglied</h1>
+	</div>
+</div>		
+<div class="box normal">
+	<div class="wideBoxLeft">	
+	
+		<%= error_messages_for :user %>
+		
+		<% form_for :user, :url => users_path do |form| -%>
+			<h2>Deine Basisdaten</h2>
+
+			<fieldset>
+				<h4>Hier kommen Angaben hin:</h4>
+				<div class="formRow">
+					<label for="user_login">Login</label>
+					<%= form.text_field :login %>
+				</div>
+			</fieldset>
+			
+			<fieldset>
+				<h4>Sicherheit:</h4>
+				<div class="formRow">
+					<label for="user_email">E-Mail</label>
+					<%= form.text_field :email %>
+				</div>
+				<div class="formRow">
+					<label for="user_password">Password</label>
+					<%= form.password_field :password %>
+				</div>
+				<div class="formRow">
+					<label for="user_password_confirmation">Confirm Password</label>
+					<%= form.password_field :password_confirmation %>
+				</div>
+			</fieldset>
+			
+			<fieldset>
+				<h4>Bestätigen:</h4>
+			  <div class="formRow agb">			    
+			    <%= form.check_box(:terms_of_service) %>
+				<label for="user_terms_of_service">Ich akzeptiere die <%= link_to('AGB', terms_of_service_path) %>.</label>
+			  </div>
+			</fieldset>
+						
+			<div class="formRow">
+				<div class="buttons">
+      		<%= link_to(image_tag('buttons/bt_abbrechen.gif', :alt => 'Abbrechen'), user_path(current_user)) %>
+					<%= image_submit_tag('buttons/bt_speichern.gif', :alt => 'Speichern') %>
+				</div>
+			</div>
+			
+		<% end -%>
+	</div>
+	<div class="sideShow">	
+	</div>
+</div>

@@ -1,0 +1,8 @@
+<h1>Edit card</h1>
+
+<%- form_for :card, :url => project_card_path(@project, @card), :html => {:multipart => true, :method => :put} do |form| -%>
+  <%= error_messages_for :card %>
+  <%= render :partial => 'form', :object => form %>
+  <%= submit_tag('Update card') %>
+  * fields are mandatory
+<%- end -%>

@@ -1,0 +1,27 @@
+body {
+	background-repeat:  repeat-x;
+  background-color: #FFF;
+/*  font-size: 123.1%;*/
+  font-family: Lucida Grande, Verdana, sans-serif;
+  color: #333;
+}
+
+div#bd {
+  padding: 10px;
+}
+
+div#hd,
+div#ft {
+  background-color: #a0a0a0;
+  padding:5px;
+}
+
+ul.navi li,
+ul.foot li {
+  display:inline;
+  margin: 5px;
+}
+
+td,th {
+  padding: 2px;
+}

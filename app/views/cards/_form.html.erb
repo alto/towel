@@ -1,0 +1,15 @@
+<%- content_for(:head) do -%>
+  <%= stylesheet_link_tag 'calendariffic/calendar-system.css' %>    
+  <%= javascript_include_tag 'calendariffic/calendar.js', 'calendariffic/calendar-setup.js' %>
+  <%= javascript_include_tag "calendariffic/lang/calendar-de.js" %>
+<%- end -%>
+<fieldset>
+  <label for="card_title">Title*</label>
+  <%= form.text_field :title %>
+  <label for="card_description">Description</label>
+  <%= form.text_area :description %>
+  <label for="card_effort">Effort</label>
+  <%= form.text_field :effort %>
+  <label for="timestamp">Timestamp</label>
+	<%= calendar_tag(@card, :timestamp) %>
+</fieldset>

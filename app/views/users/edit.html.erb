@@ -1,0 +1,40 @@
+<div class="box">
+	<div class="fullBox">
+		<h1>Mitglied ändern</h1>
+	</div>
+</div>		
+<div class="box normal">
+	<div class="wideBoxLeft">
+		
+		<%= flash[:notice] %>
+		<%= error_messages_for :user %>
+		
+		<% form_for :user, :url => user_path(@user), :html => { :method => :put, :multipart => true } do |form| -%>
+			<h2>Deine Basisdaten</h2>
+			
+			<%= render :partial => 'user_form', :locals => {:form => form} %>
+			
+			<fieldset>
+				<h4>Sicherheit:</h4>
+				<div class="formRow">
+					<label for="password">Password</label>
+					<%= form.password_field :password %>
+				</div>
+				<div class="formRow">
+					<label for="password_confirmation">Confirm Password</label>
+					<%= form.password_field :password_confirmation %>
+				</div>
+			</fieldset>
+			
+			<div class="formRow">
+				<div class="buttons">
+      		<%= link_to(image_tag('buttons/bt_abbrechen.gif', :alt => 'Abbrechen'), user_path(current_user)) %>
+					<%= image_submit_tag('buttons/bt_speichern.gif', :alt => 'Speichern') %>
+				</div>
+			</div>
+		
+		<% end -%>		
+	</div>
+	<div class="sideShow">	
+	</div>
+</div>

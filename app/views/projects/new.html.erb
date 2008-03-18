@@ -1,0 +1,13 @@
+<h1>Create new project</h1>
+
+<%- form_for :project, :url => projects_path, :html => {:multipart => true} do |form| -%>
+  <%= error_messages_for :project %>
+  <fieldset>
+    <label for="project_name">Name*</label>
+    <%= form.text_field :name %>
+    <label for="project_description">Description</label>
+    <%= form.text_area :description %>
+  </fieldset>
+  <%= submit_tag('Create project') %>
+  * fields are mandatory
+<%- end -%>

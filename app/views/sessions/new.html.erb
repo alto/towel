@@ -1,0 +1,44 @@
+<div class="box">
+	<div class="fullBox">
+		<h1>Login</h1>
+	</div>
+</div>		
+<div class="box normal">
+	<div class="wideBoxLeft">		
+		
+		<% form_tag session_path do -%>
+			<h2>Deine Basisdaten</h2>
+			<fieldset>
+				<h4>Hier kommen Angaben hin:</h4>
+				<div class="formRow">
+					<label for="login">Login</label>
+					<%= text_field_tag 'login', '', :class => 'input' %>
+				</div>
+				<div class="formRow">
+					<label for="password">Password</label>
+					<%= password_field_tag 'password', '', :class => 'input' %>
+				</div>
+				
+				<!-- Uncomment this if you want this functionality
+				<div class="formRow">
+					<label for="remember_me">Remember me:</label>
+					<%= check_box_tag 'remember_me' %>
+				</div>
+				-->
+			</fieldset>
+				
+			<div class="formRow">
+				<div class="buttons">
+      		<%= link_to(image_tag('buttons/bt_abbrechen.gif', :alt => 'Abbrechen'), user_path(current_user)) %>
+					<%= image_submit_tag('buttons/bt_speichern.gif', :alt => 'Speichern') %>
+				</div>
+			</div>
+			<%= link_to('Registrieren', new_user_path) %>
+		
+		<% end -%>
+		
+		<%= link_to "Kennwort vergessen?", recover_password_path %>	
+	</div>
+	<div class="sideShow">	
+	</div>
+</div>

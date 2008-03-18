@@ -1,0 +1,14 @@
+--- 
+:backgroundrb: 
+  :ip: localhost
+  :port: 11006
+  :environment: development
+:schedules:
+  :mms_worker:
+    :import:
+      :trigger_args: 20 */5 * * * * *
+      :data:
+        :server: pop.1und1.com
+        :port: 110
+        :user: mms-dev@tempodome.net
+        :password: 

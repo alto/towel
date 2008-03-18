@@ -1,0 +1,53 @@
+<div class="box">
+	<div class="inBox1of1">
+		<h1>Benutzer</h1>
+		<%= link_to('zurück zur Admin-Übersicht', admin_path) %>
+		<table style="width:100%;border:1px solid white;">
+		  <%- @users.each do |user| -%>
+		    <tr>
+		      <td rowspan="2" style="width:102px;">
+		        <%= link_to(medium_image_tag(user.portrait, {}, :classname => 'User'), user_path(user)) %>
+		      </td>
+		      <td style="width:500px;">
+		        <%= link_to(user.login, user_path(user)) %>
+		        (<%= link_to(user.display_name, user_path(user)) %>)
+		      </td>
+		      <td rowspan="2" style="width:102px;">
+		        <%- if user.deleted_at -%>
+		          gelöscht am <%= display_date(user.deleted_at) %>
+  		        <%= link_to_function(image_tag('icons/refresh.gif', :style => 'display:inline;') + ' Reaktivieren', 
+  		            visual_effect(:toggle_blind, "reactivate_form_#{user.id}", :duration => 0.3)) %>
+  		        <div>
+    		        <%- form_tag(undelete_admin_user_path(user), :id => "reactivate_form_#{user.id}", 
+    		            :style => 'display:none;') do -%>
+    		          <%= text_field_tag(:comment) %>
+    		          <%= submit_tag('Speichern') %>
+  		          <%- end -%>
+  		        </div>
+		        <%- else -%>
+		          aktiv
+  		        <%= link_to_function(image_tag('icons/x.gif', :style => 'display:inline;') + ' Löschen', 
+                  visual_effect(:toggle_blind, "delete_form_#{user.id}", :duration => 0.3)) %>
+  		        <div>
+    		        <%- form_tag(admin_user_path(user), :method => :delete, 
+    		            :id => "delete_form_#{user.id}", :style => 'display:none;') do -%>
+    		          <%= text_field_tag(:comment) %>
+    		          <%= submit_tag('Speichern') %>
+  		          <%- end -%>
+  		        </div>
+  		      <%- end -%>
+		      </td>
+		    </tr>
+		    <tr>
+          <!-- <td>image</td> -->
+		      <td>
+		        <%= link_to(pluralize(user.contributions.size, 'Beitrag', 'Beiträge'), 
+		            admin_user_contributions_path(user)) %>
+		      </td>
+          <!-- <td>actions</td> -->
+		    </tr>
+		  <%- end -%>
+		</table>
+		<%= link_to('zurück zur Admin-Übersicht', admin_path) %>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+[20.02.2008]
+- created new project based on inlight-code
+- specs are running now
+- application is running
+
+[25.02.2008]
+- user may add projects
+- user may add cards to projects
+
+[28.02.2008]
+- event tracking for projects and cards
+- cards may be started, finished and deleted
+
+[01.03.2008]
+- first version of build-up charts
+
+[02.03.2008]
+- showing build-up charts for project
+
+[03.03.2008]
+- showing burn-down charts for project
+
+[10.03.2008]
+- improved iteration speed calculation to reflect current day (within the iteration)
+
+CURRENTLY WORKING ON
+
+
+TODO
+- make project and card handling more comfortable
+- add support for more than one user

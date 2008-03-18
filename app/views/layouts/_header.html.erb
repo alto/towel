@@ -1,0 +1,41 @@
+<ul class="navi">
+  <%- if logged_in? -%>
+    <li><%= link_to('admin', admin_path) if current_user.admin? %></li>
+		<li><%= link_to h(current_user.login), user_path(current_user), :class => 'border' %></li>
+		<li><%= link_to('Log out', session_path, :method => :delete) %></li>
+	<%- else -%>
+    <%= link_to('Registrieren', new_user_path) %>
+    <%= link_to_function('Log in', visual_effect(:appear, 'loginForm')) %>
+	<%- end -%>
+</ul>
+<form action="#">
+	<input type="text" value="Suche" class="input" />
+	<input type="image" src="/images/buttons/bt_go.gif" />
+</form>
+
+<%- unless logged_in? -%>
+  <div id="loginForm" style="display:none;">
+    <% form_tag session_path do -%>
+      <div class="formCol">
+        <%= text_field_tag 'login', nil, :class => 'input' %>
+        <%= password_field_tag 'password', nil, :class => 'input' %>
+      </div>
+      <div class="formCol" id="colTwo">
+    	  <div class="row">
+    		  <%= check_box_tag 'remember_me' %>
+          <label for="remember_me">Ich möchte auf diesem Rechner angemeldet bleiben.</label>
+        </div>
+        <%= image_submit_tag('buttons/bt_login_login.gif', :alt => 'Login') %> 
+        <%#= submit_tag 'Login', :class => 'submit' %> 
+        <%= link_to_function('<span>abbrechen</span>', visual_effect(:fade, 'loginForm')) %>
+        <!-- <img src="../images/buttons/bt_login_login.gif" /> -->
+      </div>  
+    <% end -%>
+
+    <%= link_to "Kennwort vergessen?", recover_password_path, :id => 'forgot' %>
+  </div>
+<%- end -%>
+
+<ul id="menu">
+	<li><%= link_to('Inlight', root_path) %></li>
+</ul>

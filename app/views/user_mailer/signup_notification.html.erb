@@ -1,0 +1,12 @@
+Hallo dude!
+
+Dein Account wurde angelegt.
+
+  Login: <%= @user.login %>
+
+Benutze bitte diesen Link, um deinen Account zu aktivieren:
+
+  <%= activate_url(:activation_code => @user.activation_code) %>
+
+
+Das Inlight-Team

@@ -1,0 +1,8 @@
+Welcome to Towel development!
+
+Gems
+- image_science (1.1.3) (FreeImage), or RMagick (ImageMagick/GraphicsMagick) on Windows ;-)
+- mongrel (1.1.3)
+- mongrel_cluster (1.0.5)
+- rake (0.8.1)
+- RubyInline (3.6.6)
