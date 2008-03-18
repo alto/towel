@@ -4,14 +4,10 @@
 		<li><%= link_to h(current_user.login), user_path(current_user), :class => 'border' %></li>
 		<li><%= link_to('Log out', session_path, :method => :delete) %></li>
 	<%- else -%>
-    <%= link_to('Registrieren', new_user_path) %>
-    <%= link_to_function('Log in', visual_effect(:appear, 'loginForm')) %>
+    <%= link_to('sign-up', new_user_path) %>
+    <%= link_to_function('sign-in', visual_effect(:appear, 'loginForm')) %>
 	<%- end -%>
 </ul>
-<form action="#">
-	<input type="text" value="Suche" class="input" />
-	<input type="image" src="/images/buttons/bt_go.gif" />
-</form>
 
 <%- unless logged_in? -%>
   <div id="loginForm" style="display:none;">
@@ -23,7 +19,7 @@
       <div class="formCol" id="colTwo">
     	  <div class="row">
     		  <%= check_box_tag 'remember_me' %>
-          <label for="remember_me">Ich möchte auf diesem Rechner angemeldet bleiben.</label>
+          <label for="remember_me">Stay logged in on this machine.</label>
         </div>
         <%= image_submit_tag('buttons/bt_login_login.gif', :alt => 'Login') %> 
         <%#= submit_tag 'Login', :class => 'submit' %> 
@@ -36,6 +32,6 @@
   </div>
 <%- end -%>
 
-<ul id="menu">
-	<li><%= link_to('Inlight', root_path) %></li>
-</ul>
+<!-- <ul id="menu">
+  <li><%= link_to('Inlight', root_path) %></li>
+</ul> -->
