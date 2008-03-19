@@ -1,3 +1,3 @@
-ExceptionNotifier.exception_recipients = %w(dev@tempodome.net)
-ExceptionNotifier.sender_address = %("Application Error" <error@tempodome.net>)
-ExceptionNotifier.email_prefix = "[INLIGHT] "
+ExceptionNotifier.exception_recipients = %w(boettger@mt7.de)
+ExceptionNotifier.sender_address = %("Application Error" <error@42towels.com>)
+ExceptionNotifier.email_prefix = "[TOWEL] "

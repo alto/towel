@@ -10,7 +10,7 @@ describe UserMailer, "signup notification" do
     @user = mock_user(:activation_code => 'abc')
   end
   it "should send a mail" do
-    @expected.subject = "[INLIGHT] Bitte aktiviere Deinen Account!"
+    @expected.subject = "[TOWEL] Bitte aktiviere Deinen Account!"
     @expected.body    = read_fixture('user_mailer/signup_notification.txt')
     @expected.from    = "noreply@tempodome.net"
     @expected.to      = @user.email
@@ -27,7 +27,7 @@ describe UserMailer, "activation" do
     @user = mock_user
   end
   it "should send a mail" do
-    @expected.subject = "[INLIGHT] Dein Account wurde aktiviert!"
+    @expected.subject = "[TOWEL] Dein Account wurde aktiviert!"
     @expected.body    = read_fixture('user_mailer/activation.txt')
     @expected.from    = "noreply@tempodome.net"
     @expected.to      = @user.email
@@ -44,7 +44,7 @@ describe UserMailer, "password_recover" do
     @user = mock_user(:activation_code => 'abc')
   end
   it "should send a mail" do
-    @expected.subject = "[INLIGHT] Kennwort neu setzen"
+    @expected.subject = "[TOWEL] Kennwort neu setzen"
     @expected.body    = read_fixture('user_mailer/password_recover.txt')
     @expected.from    = "noreply@tempodome.net"
     @expected.to      = @user.email
@@ -61,7 +61,7 @@ describe UserMailer, "password_recovered" do
     @user = mock_user
   end
   it "should send a mail" do
-    @expected.subject = "[INLIGHT] Account reaktiviert"
+    @expected.subject = "[TOWEL] Account reaktiviert"
     @expected.body    = read_fixture('user_mailer/password_recovered.txt')
     @expected.from    = "noreply@tempodome.net"
     @expected.to      = @user.email

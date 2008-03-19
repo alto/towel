@@ -21,8 +21,8 @@ config.action_mailer.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
   :address        => 'smtp.1und1.de',
   :port           => '25',
-  :domain         => "www.tempodome.net",
-  :user_name      => 'noreply@tempodome.net',
-  :password       => 'ylperon',
+  :domain         => "mt7.de",
+  :user_name      => 'pt6914812-alto',
+  :password       => '..colo22',
   :authentication => :plain             # :plain, :login or :cram_md5
 }

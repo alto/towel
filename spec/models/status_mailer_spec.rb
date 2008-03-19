@@ -11,7 +11,7 @@ describe StatusMailer, "user_deleted" do
     @comment = 'unwürdig'
   end
   it "should send a mail" do
-    @expected.subject = "[INLIGHT] User deaktiviert!"
+    @expected.subject = "[TOWEL] User deaktiviert!"
     @expected.body    = read_fixture('status_mailer/user_deleted.txt')
     @expected.from    = "noreply@tempodome.net"
     @expected.to      = @user.email
@@ -29,7 +29,7 @@ describe StatusMailer, "user_undeleted" do
     @comment = 'wieder würdig'
   end
   it "should send a mail" do
-    @expected.subject = "[INLIGHT] User wieder aktiviert!"
+    @expected.subject = "[TOWEL] User wieder aktiviert!"
     @expected.body    = read_fixture('status_mailer/user_undeleted.txt')
     @expected.from    = "noreply@tempodome.net"
     @expected.to      = @user.email

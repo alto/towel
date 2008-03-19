@@ -22,10 +22,3 @@ class ActionMailer::Base
   default_url_options[:port] = '3000'
 end
 
-require 'flickr'
-FLICKR_CONFIG = {
-  :flickr_key => "1e17371677a8a86f08270a30b4437d80",
-  :flickr_shared_secret => "c3b1e7d35c374030",
-  :rflickr_lib => true
-}
-XMLRPC::Config::ENABLE_NIL_CREATE=true

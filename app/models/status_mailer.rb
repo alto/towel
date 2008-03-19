@@ -17,7 +17,7 @@ class StatusMailer < ActionMailer::Base
     def setup_email(recipient)
       @recipients  = "#{recipient.email}"
       @from        = "noreply@tempodome.net"
-      @subject     = "[INLIGHT] "
+      @subject     = "[TOWEL] "
       @sent_on     = Time.now
     end
 end
