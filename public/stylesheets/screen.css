@@ -18,6 +18,7 @@ div#ft {
 
 ul.navi li,
 ul.foot li {
+  float: right;
   display:inline;
   margin: 5px;
 }
