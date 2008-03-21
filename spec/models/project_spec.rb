@@ -34,3 +34,20 @@ describe Project, 'creation' do
   end
 end
 
+describe Project, "deletion" do
+  before do
+    @project = create_project
+  end
+  it "should delete its cards, too" do
+    card = mock_card
+    @project.stub!(:cards).and_return([card])
+    card.should_receive(:destroy)
+    @project.destroy
+  end
+  it "should delete its events, too" do
+    event = mock_model(Event)
+    @project.stub!(:events).and_return([event])
+    event.should_receive(:destroy)
+    @project.destroy
+  end
+end
