@@ -28,6 +28,10 @@ class Project < ActiveRecord::Base
 
   acts_as_slugable :source_column => :name
 
+  def every_day_project?
+    false
+  end
+
   def to_param
     url_slug
   end

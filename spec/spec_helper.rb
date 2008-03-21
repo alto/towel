@@ -103,11 +103,12 @@ def valid_project_fields(options={})
 end
 def mock_project(options={})
   mock_fields = {
-    :to_param   => options[:name] ? options[:name].to_url : 'project_name',
-    :url_slug   => options[:name] ? options[:name].to_url : 'project_name',
-    :cards      => [],
-    :name       => 'project name',
-    :created_at => Time.now,
+    :to_param           => options[:name] ? options[:name].to_url : 'project_name',
+    :url_slug           => options[:name] ? options[:name].to_url : 'project_name',
+    :cards              => [],
+    :name               => 'project name',
+    :created_at         => Time.now,
+    :every_day_project? => true,
   }
   mock_model(Project, mock_fields)
 end

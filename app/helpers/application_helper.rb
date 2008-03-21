@@ -32,9 +32,13 @@ module ApplicationHelper
     return '' if date.nil?
     date.strftime(time_format)
   end
-  def display_date(date)
+  def display_date(date, options={})
     return '' if date.nil?
-    date.strftime(date_format)
+    if options[:with_day_name]
+      date.strftime(date_format_with_day_name)
+    else
+      date.strftime(date_format)
+    end
   end
   
   def display_description(description)
@@ -74,6 +78,9 @@ module ApplicationHelper
 
     def date_format
       "%d.%m.%Y"
+    end
+    def date_format_with_day_name
+      "%d.%m.%y-%a"
     end
     def datetime_format
       "%d.%m.%Y | %H:%M"

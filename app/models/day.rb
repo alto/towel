@@ -4,11 +4,11 @@ class Day
     :speed_last_days, :speed_iteration, :speed_iteration_cumulated,
     :speed_overall, :points_undone_all, :points_undone_all_from_top
   
-  def initialize(timestamp, previous_day)
+  def initialize(timestamp)
     @timestamp = timestamp
-    @points_to_do = previous_day ? previous_day.points_to_do : 0
-    @points_done_all  = previous_day ? previous_day.points_done_all : 0
-    @points_undone_all = previous_day ? previous_day.points_undone_all : 0
+    @points_to_do = 0
+    @points_done_all  = 0
+    @points_undone_all = 0
     @points_done_today = 0
     @speed_last_days = 0
     @speed_iteration = 0
@@ -18,16 +18,24 @@ class Day
   end
   
   def self.days_for_project(project)
-    days = []
     events = Event.find(:all, :conditions => ['events.project_id = ? AND events.card_id IS NOT NULL', project.id], 
       :order => 'events.created_at ASC', :include => :card)
+      
+    first_day = events.first ? events.first.created_at : Time.now
+    last_day  = events.last  ? events.last.created_at  : Time.now
+    days = initialise_days(first_day, last_day, :every_day_project => project.every_day_project?)
 
     events.each do |event|
-
       unless day = days.select {|d| d.timestamp.same_date_as?(event.created_at)}.first
-        previous_day = days.last
-        day = Day.new(event.created_at, previous_day)
+        day = Day.new(event.created_at)
         days << day
+      end
+      
+      if day.points_to_do <= 0
+        previous_day = days[days.index(day)-1] || day
+        day.points_to_do      = previous_day.points_to_do
+        day.points_done_all   = previous_day.points_done_all
+        day.points_undone_all = previous_day.points_undone_all
       end
 
       if event.card_estimated?
@@ -52,6 +60,25 @@ class Day
   end
   
   private
+  
+    def self.initialise_days(from_date, to_date, options={})
+      options[:every_day_project] = true unless options.keys.include?(:every_day_project)
+      return [] unless options[:every_day_project]
+      while(from_date.wday != 1) do
+        from_date = from_date.yesterday
+      end
+      while(to_date.wday != 5) do
+        to_date = to_date.tomorrow
+      end
+      days = []
+      day = from_date
+      while(!day.same_date_as?(to_date)) do
+        days << Day.new(day) unless [0,6].include?(day.wday)
+        day = day.tomorrow
+      end
+      days
+    end
+  
     def self.calculate_points_undone_all_from_top(days)
       days.first.points_undone_all_from_top = days.last.points_to_do.to_f-days.first.points_done_today
       (1..(days.size-1)).each do |i|

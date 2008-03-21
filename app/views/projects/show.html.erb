@@ -58,7 +58,7 @@
   <%- @days.each_with_index do |day,i| -%>
     <tr>
       <td><%= i+1 %></td>
-      <td><%= display_date(day.timestamp) %></td>
+      <td><%= display_date(day.timestamp, :with_day_name => true) %></td>
       <td><%= day.points_to_do %></td>
       <td><%= day.points_done_today %></td>
       <td><%= day.points_done_all %></td>
