@@ -25,9 +25,10 @@
 
 [21.03.2008]
 - add a basic startpage
+- iterations may be based on weeks (Monday to Friday)
 
 CURRENTLY WORKING ON
-- iterations are based on weeks
+
 
 TODO
 - make project and card handling more comfortable

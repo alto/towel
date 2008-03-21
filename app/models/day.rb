@@ -24,7 +24,7 @@ class Day
     first_day = events.first ? events.first.created_at : Time.now
     last_day  = events.last  ? events.last.created_at  : Time.now
     days = initialise_days(first_day, last_day, :every_day_project => project.every_day_project?)
-
+    
     events.each do |event|
       unless day = days.select {|d| d.timestamp.same_date_as?(event.created_at)}.first
         day = Day.new(event.created_at)
@@ -45,6 +45,15 @@ class Day
       if event.card_finished?
         day.points_done_all   += event.card.effort
         day.points_done_today  += event.card.effort
+      end
+    end
+    if !events.empty? && day = days.select {|d| d.timestamp.same_date_as?(events.last.created_at)}.first
+      if days.index(day) <= (days.size-1)
+        ((days.index(day)+1)..(days.size-1)).each do |i|
+          days[i].points_to_do = days[i-1].points_to_do
+          days[i].points_done_all = days[i-1].points_done_all
+          days[i].points_undone_all = days[i-1].points_undone_all
+        end
       end
     end
 
@@ -72,7 +81,7 @@ class Day
       end
       days = []
       day = from_date
-      while(!day.same_date_as?(to_date)) do
+      while(!day.same_date_as?(to_date.tomorrow)) do
         days << Day.new(day) unless [0,6].include?(day.wday)
         day = day.tomorrow
       end
