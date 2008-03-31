@@ -5,7 +5,7 @@
 # ENV['RAILS_ENV'] ||= 'production'
 
 # Specifies gem version of Rails to use when vendor/rails is not present
-RAILS_GEM_VERSION = '2.0.1' unless defined? RAILS_GEM_VERSION
+RAILS_GEM_VERSION = '2.0.2' unless defined? RAILS_GEM_VERSION
 
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
@@ -60,7 +60,7 @@ Rails::Initializer.run do |config|
   # config.active_record.observers = :user_observer
 end
 
-require 'lib/string'
-require 'lib/array_extensions'
-require 'lib/time_extensions'
-require 'lib/acts_as_deletable'
+require "#{RAILS_ROOT}/lib/string"
+require "#{RAILS_ROOT}/lib/array_extensions"
+require "#{RAILS_ROOT}/lib/time_extensions"
+require "#{RAILS_ROOT}/lib/acts_as_deletable"

@@ -5,6 +5,8 @@ development:
   username: root
   password:
   host: localhost
+  # adapter: sqlite3
+  # dbfile: db/sqlite3/development.db
 
 test:
   adapter: mysql
@@ -13,3 +15,5 @@ test:
   username: root
   password:
   host: localhost
+  # adapter: sqlite3
+  # dbfile: db/sqlite3/development.db
