@@ -17,12 +17,4 @@ config.action_controller.perform_caching             = true
 # Disable delivery errors, bad email addresses will be ignored
 # config.action_mailer.raise_delivery_errors = false
 
-config.action_mailer.delivery_method = :smtp
-ActionMailer::Base.smtp_settings = {
-  :address        => 'smtp.1und1.de',
-  :port           => '25',
-  :domain         => "mt7.de",
-  :user_name      => 'pt6914812-alto',
-  :password       => '..colo22',
-  :authentication => :plain             # :plain, :login or :cram_md5
-}
+# config.action_mailer.delivery_method = :smtp
