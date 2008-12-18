@@ -26,3 +26,10 @@ end
 def build_user(options={}); User.new(valid_user_options(options)); end
 def create_user(options={}); (o = build_user(options)).save!; o.activate; o; end
 
+def valid_project_options(options={})
+  { :name => 'project',
+    :user => options[:user] || create_user }.merge(options)
+end
+def build_project(options={}); Project.new(valid_project_options(options)); end
+def create_project(options={}); (o = build_project(options)).save!; o; end
+
