@@ -26,3 +26,22 @@ ul.foot li {
 td,th {
   padding: 2px;
 }
+
+ul.cards {
+  width: 150px;
+  height: 560px;
+}
+
+ul.cards li {
+  background-color: yellow;
+  border: 1px solid black;
+  width: 150px;
+  height: 50px;
+  padding: 2px;
+  position: relative;
+  float: left;
+}
+
+ul.cards li .effort {
+  float: right;
+}

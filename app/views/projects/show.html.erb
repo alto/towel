@@ -6,7 +6,17 @@
 
 <h1>Project <%=h @project.name %></h1>
 
-<h2>Cards</h2>
+<ul class="cards">
+  <%- @cards.each do |card| -%>
+  <li>
+    <h3>title</h3>
+    <span class="effort">2</span>
+    &nbsp;
+  </li>
+  <%- end -%>
+</ul>
+
+<h2 style="clear:both;">Cards</h2>
 <table>
   <tr>
     <th>Title</th>
