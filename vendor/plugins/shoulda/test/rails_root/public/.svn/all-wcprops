@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/public
+END
+500.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/public/500.html
+END
+404.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/public/404.html
+END
+422.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/public/422.html
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/public/.htaccess
+END

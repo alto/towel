@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda
+END
+shoulda.gemspec
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/shoulda.gemspec
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/Rakefile
+END
+README.rdoc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/README.rdoc
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/.gitignore
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/init.rb
+END
+.autotest
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/.autotest
+END
+MIT-LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/MIT-LICENSE
+END
+CONTRIBUTION_GUIDELINES.rdoc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/CONTRIBUTION_GUIDELINES.rdoc
+END

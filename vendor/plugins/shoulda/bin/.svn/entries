@@ -1,0 +1,29 @@
+8
+
+dir
+602
+https://svn.lean-men.com/svn/trunk/enebo/vendor/plugins/shoulda/bin
+https://svn.lean-men.com/svn
+
+
+
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+
+svn:special svn:externals svn:needs-lock
+
+convert_to_should_syntax
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+63bdeb34f9e51287b2b0af358a3deff1
+2008-11-24T20:08:26.593850Z
+597
+alto
+has-props
+

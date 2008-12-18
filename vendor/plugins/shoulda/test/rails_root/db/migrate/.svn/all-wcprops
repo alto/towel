@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/db/migrate
+END
+009_create_products.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/db/migrate/009_create_products.rb
+END
+008_create_dogs_fleas.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/db/migrate/008_create_dogs_fleas.rb
+END
+010_create_friendships.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/db/migrate/010_create_friendships.rb
+END
+005_create_dogs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/db/migrate/005_create_dogs.rb
+END
+007_create_fleas.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/db/migrate/007_create_fleas.rb
+END
+001_create_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/db/migrate/001_create_users.rb
+END
+004_create_tags.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/db/migrate/004_create_tags.rb
+END
+006_create_addresses.rb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/db/migrate/006_create_addresses.rb
+END
+003_create_taggings.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/db/migrate/003_create_taggings.rb
+END
+002_create_posts.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/db/migrate/002_create_posts.rb
+END

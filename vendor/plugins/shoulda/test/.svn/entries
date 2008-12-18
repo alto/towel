@@ -1,0 +1,67 @@
+8
+
+dir
+602
+https://svn.lean-men.com/svn/trunk/enebo/vendor/plugins/shoulda/test
+https://svn.lean-men.com/svn
+
+
+
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+
+svn:special svn:externals svn:needs-lock
+
+unit
+dir
+
+test_helper.rb
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+030247ea995884f184505b45555748e1
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+fail_macros.rb
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+f30596dd2eabf30de73c961a99d784c9
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+other
+dir
+
+functional
+dir
+
+fixtures
+dir
+
+rails_root
+dir
+
+README
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+f1b38a28dcdc57b1edad7f2180d35e66
+2008-11-24T20:08:26.593850Z
+597
+alto
+

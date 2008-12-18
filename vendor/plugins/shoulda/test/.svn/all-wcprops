@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test
+END
+test_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/test_helper.rb
+END
+fail_macros.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/fail_macros.rb
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/README
+END

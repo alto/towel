@@ -1,36 +1,39 @@
-[20.02.2008]
-- created new project based on inlight-code
-- specs are running now
-- application is running
+CURRENTLY WORKING ON
+- move specs to tests
 
-[25.02.2008]
-- user may add projects
-- user may add cards to projects
-
-[28.02.2008]
-- event tracking for projects and cards
-- cards may be started, finished and deleted
-
-[01.03.2008]
-- first version of build-up charts
-
-[02.03.2008]
-- showing build-up charts for project
-
-[03.03.2008]
-- showing burn-down charts for project
-
-[10.03.2008]
-- improved iteration speed calculation to reflect current day (within the iteration)
+TODO
+- move to Rails version 2.1.x
+- move to Rails version 2.2.x
+- project owner may add and remove project members
+- make project and card handling more comfortable
+- launch
 
 [21.03.2008]
 - add a basic startpage
 - iterations may be based on weeks (Monday to Friday)
 
-CURRENTLY WORKING ON
+[10.03.2008]
+- improved iteration speed calculation to reflect current day (within the iteration)
 
+[03.03.2008]
+- showing burn-down charts for project
 
-TODO
-- project owner may add and remove project members
-- make project and card handling more comfortable
-- launch
+[02.03.2008]
+- showing build-up charts for project
+
+[01.03.2008]
+- first version of build-up charts
+
+[28.02.2008]
+- event tracking for projects and cards
+- cards may be started, finished and deleted
+
+[25.02.2008]
+- user may add projects
+- user may add cards to projects
+
+[20.02.2008]
+- created new project based on inlight-code
+- specs are running now
+- application is running
+

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/config
+END
+routes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/config/routes.rb
+END
+database.yml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/config/database.yml
+END
+boot.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/config/boot.rb
+END
+environment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/config/environment.rb
+END

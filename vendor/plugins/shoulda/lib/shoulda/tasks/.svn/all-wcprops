@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/lib/shoulda/tasks
+END
+yaml_to_shoulda.rake
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/lib/shoulda/tasks/yaml_to_shoulda.rake
+END
+list_tests.rake
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/lib/shoulda/tasks/list_tests.rake
+END

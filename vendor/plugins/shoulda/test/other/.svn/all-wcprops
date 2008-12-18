@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/other
+END
+should_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/other/should_test.rb
+END
+helpers_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/other/helpers_test.rb
+END
+context_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/other/context_test.rb
+END
+convert_to_should_syntax_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/other/convert_to_should_syntax_test.rb
+END
+private_helpers_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/other/private_helpers_test.rb
+END

@@ -1,0 +1,40 @@
+8
+
+dir
+602
+https://svn.lean-men.com/svn/trunk/enebo/vendor/plugins/shoulda/test/rails_root/config/initializers
+https://svn.lean-men.com/svn
+
+
+
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+
+svn:special svn:externals svn:needs-lock
+
+shoulda.rb
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+a5fcf6b5f21e4b2cc75f28bb6aabe3ef
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+new_rails_defaults.rb
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+c286e04f2aa51a60494afa62fa17291d
+2008-11-24T20:08:26.593850Z
+597
+alto
+

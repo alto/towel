@@ -1,0 +1,52 @@
+8
+
+dir
+602
+https://svn.lean-men.com/svn/trunk/enebo/vendor/plugins/shoulda/test/rails_root/app/controllers
+https://svn.lean-men.com/svn
+
+
+
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+
+svn:special svn:externals svn:needs-lock
+
+application.rb
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+2e5f23d738e159061942124b227373d2
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+users_controller.rb
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+11a7be695a1833985b5e11807fbfe7b8
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+posts_controller.rb
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+5a53e914b86b3cec0bec16019631dc3a
+2008-11-24T20:08:26.593850Z
+597
+alto
+

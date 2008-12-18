@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/fixtures
+END
+users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/fixtures/users.yml
+END
+products.yml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/fixtures/products.yml
+END
+taggings.yml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/fixtures/taggings.yml
+END
+posts.yml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/fixtures/posts.yml
+END
+addresses.yml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/fixtures/addresses.yml
+END
+friendships.yml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/fixtures/friendships.yml
+END
+tags.yml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/fixtures/tags.yml
+END

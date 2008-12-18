@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/app/models
+END
+user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/app/models/user.rb
+END
+product.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/app/models/product.rb
+END
+tagging.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/app/models/tagging.rb
+END
+address.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/app/models/address.rb
+END
+post.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/app/models/post.rb
+END
+flea.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/app/models/flea.rb
+END
+dog.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/app/models/dog.rb
+END
+friendship.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/app/models/friendship.rb
+END
+tag.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/app/models/tag.rb
+END

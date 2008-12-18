@@ -1,0 +1,70 @@
+8
+
+dir
+602
+https://svn.lean-men.com/svn/trunk/enebo/vendor/plugins/shoulda/test/rails_root/config
+https://svn.lean-men.com/svn
+
+
+
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+
+svn:special svn:externals svn:needs-lock
+
+routes.rb
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+a20c7a4deb4b6b5595284b8cb028366a
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+database.yml
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+2dad426e7d8d4119d87e5a312ed5086c
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+boot.rb
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+fd5eb215ca1d1e68dfd56c3f01e6b0cd
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+environment.rb
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+3384dac3c513b3dd3cbee5eaac99d48b
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+initializers
+dir
+
+environments
+dir
+

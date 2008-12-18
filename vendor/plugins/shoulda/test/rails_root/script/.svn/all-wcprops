@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/script
+END
+console
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/script/console
+END
+generate
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/597/trunk/enebo/vendor/plugins/shoulda/test/rails_root/script/generate
+END

@@ -1,0 +1,64 @@
+8
+
+dir
+602
+https://svn.lean-men.com/svn/trunk/enebo/vendor/plugins/shoulda/test/rails_root/app/views/posts
+https://svn.lean-men.com/svn
+
+
+
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+
+svn:special svn:externals svn:needs-lock
+
+show.rhtml
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+1726309f94201def8be504daa351ee9d
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+edit.rhtml
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+4f422d46771ef2bf0f7942f50d16f82d
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+index.rhtml
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+c10a31ec3a36a5afa42fd3fccef94cb1
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+new.rhtml
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+781bb533c93dc12c0768aabbcd92cafe
+2008-11-24T20:08:26.593850Z
+597
+alto
+

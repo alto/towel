@@ -1,0 +1,76 @@
+8
+
+dir
+602
+https://svn.lean-men.com/svn/trunk/enebo/vendor/plugins/shoulda/test/other
+https://svn.lean-men.com/svn
+
+
+
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+
+svn:special svn:externals svn:needs-lock
+
+should_test.rb
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+4c90cf5f4ef742003dc1bf24da185af8
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+helpers_test.rb
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+c1bc8f789d791560d31cd4b103603374
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+context_test.rb
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+a72e9d80e91e267303d490d988ca2894
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+convert_to_should_syntax_test.rb
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+87c56a289d61bcbeb2deab23d50dc4ce
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+private_helpers_test.rb
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+67b99ee7f4103d7e98f7aafe1253e355
+2008-11-24T20:08:26.593850Z
+597
+alto
+

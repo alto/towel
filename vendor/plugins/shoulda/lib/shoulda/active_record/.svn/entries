@@ -1,0 +1,40 @@
+8
+
+dir
+602
+https://svn.lean-men.com/svn/trunk/enebo/vendor/plugins/shoulda/lib/shoulda/active_record
+https://svn.lean-men.com/svn
+
+
+
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+
+svn:special svn:externals svn:needs-lock
+
+macros.rb
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+9487cffa1411e6d2be5c52e42f67d1ec
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+assertions.rb
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+0e9a209e36299ebf5fef5df137f6b637
+2008-11-24T20:08:26.593850Z
+597
+alto
+

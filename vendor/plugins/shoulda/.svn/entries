@@ -1,0 +1,130 @@
+8
+
+dir
+602
+https://svn.lean-men.com/svn/trunk/enebo/vendor/plugins/shoulda
+https://svn.lean-men.com/svn
+
+
+
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+
+svn:special svn:externals svn:needs-lock
+
+test
+dir
+
+.git
+dir
+
+shoulda.gemspec
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+88d6dd9fdab8f6078d272380e4ecbe38
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+Rakefile
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+70c603c17445ef2a49f2c12bc4b9c48c
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+README.rdoc
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+6194b435c544f354d98e9b0d9e168c47
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+.gitignore
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+48aa8c2c2e70df5c9759629209259a0a
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+init.rb
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+027f0768af68ffe3ca3f1cff2caa1656
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+tasks
+dir
+
+.autotest
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+6e0b7921407f220533715328d72035d4
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+lib
+dir
+
+bin
+dir
+
+MIT-LICENSE
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+f24a8c507fc1addbbfc2c4b7dbefd293
+2008-11-24T20:08:26.593850Z
+597
+alto
+
+rails
+dir
+
+CONTRIBUTION_GUIDELINES.rdoc
+file
+
+
+
+
+2008-11-24T19:59:41.000000Z
+425c4fa8cf10f0755dc907428fa7099c
+2008-11-24T20:08:26.593850Z
+597
+alto
+
