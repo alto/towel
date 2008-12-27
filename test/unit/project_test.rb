@@ -32,19 +32,16 @@ class ProjectTest < ActiveSupport::TestCase
     setup do
       @project = create_project
     end
-    # FIXME: enable these tests [thorsten, 2008-12-19]
-    # should "delete its cards, too" do
-    #   card = mock_card
-    #   @project.stub!(:cards).and_return([card])
-    #   card.should_receive(:destroy)
-    #   @project.destroy
-    # end
-    # should "delete its events, too" do
-    #   event = mock_model(Event)
-    #   @project.stub!(:events).and_return([event])
-    #   event.should_receive(:destroy)
-    #   @project.destroy
-    # end
+    should "delete its cards, too" do
+      @project.cards.create(:title => 'any title')
+      @project.cards.first.expects(:destroy)
+      @project.destroy
+    end
+    should "delete its events, too" do
+      @project.events.create(:event_type => 'any type')
+      @project.events.first.expects(:destroy)
+      @project.destroy
+    end
   end
 
 end
