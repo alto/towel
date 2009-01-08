@@ -18,10 +18,9 @@ ActionController::Routing::Routes.draw do |map|
   map.terms_of_service  'terms_of_service',  :controller => 'home', :action => 'terms_of_service'
   map.contact           'contact',           :controller => 'home', :action => 'contact'
   map.deleted_record    'deleted_record',    :controller => 'home', :action => 'deleted_record'
-  map.root :controller => "home"
-  # See how all your routes lay out with "rake routes"
 
-  # Install the default routes as the lowest priority.
+  map.root :controller => "home"
+
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
 end
