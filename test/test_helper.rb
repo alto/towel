@@ -16,6 +16,12 @@ class Test::Unit::TestCase
   
 end
 
+def login_me(user) # refactor to login(user)
+  @controller.stubs(:logged_in?).returns(true)
+  @controller.stubs(:current_user).returns(user)
+  @request.session[:user] = user
+end
+
 def valid_user_options(options={})
   login = options[:login] || 'dude'
   { :login                  => login,
@@ -33,12 +39,12 @@ end
 def build_project(options={}); Project.new(valid_project_options(options)); end
 def create_project(options={}); (o = build_project(options)).save!; o; end
 
-def valid_card_fields(options={})
+def valid_card_options(options={})
   { :title    => 'card_title',
     :project  => options.keys.include?(:project) ? options[:project] : create_project,
   }.merge(options)
 end
-def build_card(options={}); Card.new(valid_card_fields(options)); end
+def build_card(options={}); Card.new(valid_card_options(options)); end
 def create_card(options={}); (o = build_card(options)).save!; o; end
 
 require 'time'
