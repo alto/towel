@@ -11,7 +11,7 @@ class Admin::UsersController < ApplicationController
     user.delete!
     flash[:notice] = "User '#{user.login}' wurde gelöscht"
     StatusMailer.deliver_user_deleted(user, params[:comment])
-    redirect_to :action => "index"
+    redirect_to admin_users_path
   end
   
   def undelete
@@ -19,6 +19,6 @@ class Admin::UsersController < ApplicationController
     user.undelete!
     flash[:notice] = "User '#{user.login}' wurde reaktiviert"
     StatusMailer.deliver_user_undeleted(user, params[:comment])
-    redirect_to :action => "index"
+    redirect_to admin_users_path
   end
 end

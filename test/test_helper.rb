@@ -31,6 +31,11 @@ def valid_user_options(options={})
 end
 def build_user(options={}); User.new(valid_user_options(options)); end
 def create_user(options={}); (o = build_user(options)).save!; o.activate; o; end
+def create_admin(options={})
+  admin = create_user(:login => 'admin')
+  admin.role = 'admin'; admin.save!
+  admin
+end
 
 def valid_project_options(options={})
   { :name => 'project',
