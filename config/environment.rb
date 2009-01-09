@@ -59,8 +59,3 @@ Rails::Initializer.run do |config|
   
   # config.active_record.observers = :user_observer
 end
-
-require "#{RAILS_ROOT}/lib/string"
-require "#{RAILS_ROOT}/lib/array_extensions"
-require "#{RAILS_ROOT}/lib/time_extensions"
-require "#{RAILS_ROOT}/lib/acts_as_deletable"

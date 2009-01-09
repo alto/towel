@@ -33,14 +33,16 @@ class ProjectTest < ActiveSupport::TestCase
       @project = create_project
     end
     should "delete its cards, too" do
-      @project.cards.create(:title => 'any title')
-      @project.cards.first.expects(:destroy)
+      card = @project.cards.create(:title => 'any title')
+      assert_not_nil Card.find(card.id)
       @project.destroy
+      assert_nil Card.find_by_id(card.id)
     end
     should "delete its events, too" do
-      @project.events.create(:event_type => 'any type')
-      @project.events.first.expects(:destroy)
+      event = @project.events.create(:event_type => 'any type')
+      assert_not_nil Event.find(event.id)
       @project.destroy
+      assert_nil Event.find_by_id(event.id)
     end
   end
 
